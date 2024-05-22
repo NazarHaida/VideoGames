@@ -5,19 +5,20 @@ import { Link } from 'react-router-dom';
 const EUSalesPredictionPage = () => {
   const initialGameData = {
     yearOfRelease: 2005,
+    yearOfPred: 2016,
     platform: 'PS4',
     genre: 'Action',
     publisher: 'Nintendo',
-    naSales: 1.5,
-    jpSales: 0.5,
-    otherSales: 0.3,
+    // naSales: 1.5,
+    // jpSales: 0.5,
+    // otherSales: 0.3,
     criticScore: 85,
     criticCount: 23,
-    userScore: 8.5,
+    userScore: 70,
     userCount: 1500,
     developer: 'Naughty Dog',
     // naSalesPerc: 30,
-    // euSalesPerc: 40,
+    euSalesPerc: 40,
     // jpSalesPerc: 10,
     // otherSalesPerc: 20,
     developerRank: 1,
@@ -34,14 +35,15 @@ const EUSalesPredictionPage = () => {
   };
   // State hooks for form data
   const [name, setName] = useState('');
-  const [naSales, setNaSales] = useState(initialGameData.naSales.toString());
-  const [jpSales, setJpSales] = useState(initialGameData.jpSales.toString());
-  const [otherSales, setOtherSales] = useState(initialGameData.otherSales.toString());
+  // const [naSales, setNaSales] = useState(initialGameData.naSales.toString());
+  // const [jpSales, setJpSales] = useState(initialGameData.jpSales.toString());
+  // const [otherSales, setOtherSales] = useState(initialGameData.otherSales.toString());
   // const [naSalesPerc, setNaSalesPerc] = useState(initialGameData.naSalesPerc.toString());
-  // const [euSalesPerc, setEuSalesPerc] = useState(initialGameData.euSalesPerc.toString());
+  const [euSalesPerc, setEuSalesPerc] = useState(initialGameData.euSalesPerc.toString());
   // const [jpSalesPerc, setJpSalesPerc] = useState(initialGameData.jpSalesPerc.toString());
   // const [otherSalesPerc, setOtherSalesPerc] = useState(initialGameData.otherSalesPerc.toString());
   const [yearOfRelease, setYearOfRelease] = useState(initialGameData.yearOfRelease.toString());
+  const [yearOfPred, setYearOfPred] = useState(initialGameData.yearOfPred.toString());
   const [criticScore, setCriticScore] = useState(initialGameData.criticScore.toString());
   const [criticCount, setCriticCount] = useState(initialGameData.criticCount.toString());
   const [userScore, setUserScore] = useState(initialGameData.userScore.toString());
@@ -76,10 +78,11 @@ const handleSubmit = (e) => {
     e.preventDefault();
     const formData = {
       name,
-      naSales,
-      jpSales,
-      otherSales,
+      // naSales,
+      // jpSales,
+      // otherSales,
       yearOfRelease,
+      yearOfPred,
       criticScore,
       criticCount,
       userScore,
@@ -93,7 +96,8 @@ const handleSubmit = (e) => {
       developerRank,
       currency,
       steamId,
-      genre
+      genre,
+      euSalesPerc
     };
 
     fetch('http://127.0.0.1:5000/game/add/eu', {
@@ -129,21 +133,29 @@ const handleSubmit = (e) => {
           <label>Name:</label>
           <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
         </div>
-        <div className="form-row">
-          <label>NA Sales:</label>
-          <input type="text" placeholder="NA Sales" value={naSales} onChange={e => setNaSales(e.target.value)} />
-        </div>
-        <div className="form-row">
-          <label>JP Sales:</label>
-          <input type="text" placeholder="JP Sales" value={jpSales} onChange={e => setJpSales(e.target.value)} />
-        </div>
-        <div className="form-row">
-          <label>Other Sales:</label>
-          <input type="text" placeholder="Other Sales" value={otherSales} onChange={e => setOtherSales(e.target.value)} />
+        {/*<div className="form-row">*/}
+        {/*  <label>NA Sales:</label>*/}
+        {/*  <input type="text" placeholder="NA Sales" value={naSales} onChange={e => setNaSales(e.target.value)} />*/}
+        {/*</div>*/}
+        {/*<div className="form-row">*/}
+        {/*  <label>JP Sales:</label>*/}
+        {/*  <input type="text" placeholder="JP Sales" value={jpSales} onChange={e => setJpSales(e.target.value)} />*/}
+        {/*</div>*/}
+        {/*<div className="form-row">*/}
+        {/*  <label>Other Sales:</label>*/}
+        {/*  <input type="text" placeholder="Other Sales" value={otherSales} onChange={e => setOtherSales(e.target.value)} />*/}
+        {/*</div>*/}
+         <div className="form-row">
+          <label>EU Sales Percent:</label>
+          <input type="text" placeholder="EU Sales Percent" value={euSalesPerc} onChange={e => setEuSalesPerc(e.target.value)} />
         </div>
         <div className="form-row">
           <label>Year of Release:</label>
           <input type="text" placeholder="Year of Release" value={yearOfRelease} onChange={e => setYearOfRelease(e.target.value)} />
+        </div>
+        <div className="form-row">
+          <label>For Year:</label>
+          <input type="text" placeholder="For Year" value={yearOfPred} onChange={e => setYearOfPred(e.target.value)} />
         </div>
         <div className="form-row">
           <label>Critic Score:</label>
@@ -201,12 +213,12 @@ const handleSubmit = (e) => {
           <label>Game Count:</label>
           <input type="number" placeholder="Game Count" value={gameCount} onChange={e => setGameCount(e.target.value)} />
         </div>
+        {/*<div className="form-row">*/}
+        {/*  <label>Developer Rank:</label>*/}
+        {/*  <input type="number" placeholder="Developer Rank" value={developerRank} onChange={e => setDeveloperRank(e.target.value)} />*/}
+        {/*</div>*/}
         <div className="form-row">
-          <label>Developer Rank:</label>
-          <input type="number" placeholder="Developer Rank" value={developerRank} onChange={e => setDeveloperRank(e.target.value)} />
-        </div>
-        <div className="form-row">
-          <label>Rank EU Developer:</label>
+          <label>Amount of games sold by Developer:</label>
           <input type="number" placeholder="Amount of games sold by Developer" value={rankEuDeveloper} onChange={e => setRankEuDeveloper(e.target.value)} />
         </div>
         <div className="form-row">

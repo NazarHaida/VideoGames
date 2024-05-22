@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginForm from './LoginForm';
-import SalesPredictionForm from './SalesPredictionForm';
+import GlobalPredictionPage from './SalesPredictionForm';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import RegisterForm from "./img/RegisterForm";
 import EUSales from "./EUSales";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/othersales" element={<OtherSales />} />
           <Route path="/jpsales" element={<JPSales />} />
 
-          <Route path="/home" element={<SalesPredictionForm />} />
+          <Route path="/home" element={<GlobalPredictionPage />} />
           <Route path="/register" element={<RegisterForm />} />
 
           <Route path="*" element={<LoginForm />} />

@@ -5,26 +5,27 @@ import { Link } from 'react-router-dom';
 const OtherSalesPredictionPage = () => {
   const initialGameData = {
     yearOfRelease: 2005,
+    yearOfPred: 2016,
     platform: 'PS4',
     genre: 'Action',
     publisher: 'Nintendo',
-    naSales: 1.5,
-    jpSales: 0.5,
-    otherSales: 0.3,
+    // naSales: 1.5,
+    // jpSales: 0.5,
+    // otherSales: 0.3,
     criticScore: 85,
     criticCount: 23,
-    userScore: 8.5,
+    userScore: 70,
     userCount: 1500,
     developer: 'Naughty Dog',
     // naSalesPerc: 30,
     // euSalesPerc: 40,
     // jpSalesPerc: 10,
-    // otherSalesPerc: 20,
+    otherSalesPerc: 20,
     developerRank: 1,
-    total_EU_Sales:40,
+    total_Other_Sales:40,
     gameCount: 5,
     // rankNaDeveloper: 1,
-    rankEuDeveloper: 40,
+    rankOtherDeveloper: 40,
     // rankJpDeveloper: 3,
     // rankOtherDeveloper: 4,
     rating: 'E',
@@ -34,14 +35,15 @@ const OtherSalesPredictionPage = () => {
   };
   // State hooks for form data
   const [name, setName] = useState('');
-  const [naSales, setNaSales] = useState(initialGameData.naSales.toString());
-  const [jpSales, setJpSales] = useState(initialGameData.jpSales.toString());
-  const [otherSales, setOtherSales] = useState(initialGameData.otherSales.toString());
+  // const [naSales, setNaSales] = useState(initialGameData.naSales.toString());
+  // const [jpSales, setJpSales] = useState(initialGameData.jpSales.toString());
+  // const [otherSales, setOtherSales] = useState(initialGameData.otherSales.toString());
   // const [naSalesPerc, setNaSalesPerc] = useState(initialGameData.naSalesPerc.toString());
-  // const [euSalesPerc, setEuSalesPerc] = useState(initialGameData.euSalesPerc.toString());
+  const [otherSalesPerc, setOtherSalesPerc] = useState(initialGameData.otherSalesPerc.toString());
   // const [jpSalesPerc, setJpSalesPerc] = useState(initialGameData.jpSalesPerc.toString());
   // const [otherSalesPerc, setOtherSalesPerc] = useState(initialGameData.otherSalesPerc.toString());
   const [yearOfRelease, setYearOfRelease] = useState(initialGameData.yearOfRelease.toString());
+  const [yearOfPred, setYearOfPred] = useState(initialGameData.yearOfPred.toString());
   const [criticScore, setCriticScore] = useState(initialGameData.criticScore.toString());
   const [criticCount, setCriticCount] = useState(initialGameData.criticCount.toString());
   const [userScore, setUserScore] = useState(initialGameData.userScore.toString());
@@ -52,7 +54,7 @@ const OtherSalesPredictionPage = () => {
   const [rating, setRating] = useState(initialGameData.rating === 'E'); // Boolean for checkbox
   const [gameCount, setGameCount] = useState(initialGameData.gameCount.toString());
   // const [rankNaDeveloper, setRankNaDeveloper] = useState(initialGameData.rankNaDeveloper.toString());
-  const [rankEuDeveloper, setRankEuDeveloper] = useState(initialGameData.rankEuDeveloper.toString());
+  const [rankOtherDeveloper, setRankOtherDeveloper] = useState(initialGameData.rankOtherDeveloper.toString());
   // const [rankJpDeveloper, setRankJpDeveloper] = useState(initialGameData.rankJpDeveloper.toString());
   // const [rankOtherDeveloper, setRankOtherDeveloper] = useState(initialGameData.rankOtherDeveloper.toString());
   const [developerRank, setDeveloperRank] = useState(initialGameData.developerRank.toString());
@@ -76,10 +78,11 @@ const handleSubmit = (e) => {
     e.preventDefault();
     const formData = {
       name,
-      naSales,
-      jpSales,
-      otherSales,
+      // naSales,
+      // jpSales,
+      // otherSales,
       yearOfRelease,
+      yearOfPred,
       criticScore,
       criticCount,
       userScore,
@@ -89,14 +92,14 @@ const handleSubmit = (e) => {
       developer,
       rating,
       gameCount,
-      rankEuDeveloper,
+      rankOtherDeveloper,
       developerRank,
       currency,
       steamId,
-      genre
+      genre,
+      otherSalesPerc
     };
-
-    fetch('http://127.0.0.1:5000/game/add/eu', {
+    fetch('http://127.0.0.1:5000/game/add/other', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -121,7 +124,7 @@ const handleSubmit = (e) => {
       <form className="form" onSubmit={handleSubmit}>
         <div className="header">
           <div className="title-container">
-            <h1 className="title">OTHER VIDEO GAMES SALES PREDICTION</h1>
+            <h1 className="title">Other VIDEO GAMES SALES PREDICTION</h1>
             {/*<h1 className="title"></h1>*/}
           </div>
         </div>
@@ -129,21 +132,29 @@ const handleSubmit = (e) => {
           <label>Name:</label>
           <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
         </div>
-        <div className="form-row">
-          <label>NA Sales:</label>
-          <input type="text" placeholder="NA Sales" value={naSales} onChange={e => setNaSales(e.target.value)} />
-        </div>
-        <div className="form-row">
-          <label>JP Sales:</label>
-          <input type="text" placeholder="JP Sales" value={jpSales} onChange={e => setJpSales(e.target.value)} />
-        </div>
-        <div className="form-row">
-          <label>Other Sales:</label>
-          <input type="text" placeholder="Other Sales" value={otherSales} onChange={e => setOtherSales(e.target.value)} />
+        {/*<div className="form-row">*/}
+        {/*  <label>NA Sales:</label>*/}
+        {/*  <input type="text" placeholder="NA Sales" value={naSales} onChange={e => setNaSales(e.target.value)} />*/}
+        {/*</div>*/}
+        {/*<div className="form-row">*/}
+        {/*  <label>JP Sales:</label>*/}
+        {/*  <input type="text" placeholder="JP Sales" value={jpSales} onChange={e => setJpSales(e.target.value)} />*/}
+        {/*</div>*/}
+        {/*<div className="form-row">*/}
+        {/*  <label>Other Sales:</label>*/}
+        {/*  <input type="text" placeholder="Other Sales" value={otherSales} onChange={e => setOtherSales(e.target.value)} />*/}
+        {/*</div>*/}
+         <div className="form-row">
+          <label>Other Sales Percent:</label>
+          <input type="text" placeholder="Other Sales Percent" value={otherSalesPerc} onChange={e => setOtherSalesPerc(e.target.value)} />
         </div>
         <div className="form-row">
           <label>Year of Release:</label>
           <input type="text" placeholder="Year of Release" value={yearOfRelease} onChange={e => setYearOfRelease(e.target.value)} />
+        </div>
+        <div className="form-row">
+          <label>For Year:</label>
+          <input type="text" placeholder="For Year" value={yearOfPred} onChange={e => setYearOfPred(e.target.value)} />
         </div>
         <div className="form-row">
           <label>Critic Score:</label>
@@ -201,13 +212,13 @@ const handleSubmit = (e) => {
           <label>Game Count:</label>
           <input type="number" placeholder="Game Count" value={gameCount} onChange={e => setGameCount(e.target.value)} />
         </div>
+        {/*<div className="form-row">*/}
+        {/*  <label>Developer Rank:</label>*/}
+        {/*  <input type="number" placeholder="Developer Rank" value={developerRank} onChange={e => setDeveloperRank(e.target.value)} />*/}
+        {/*</div>*/}
         <div className="form-row">
-          <label>Developer Rank:</label>
-          <input type="number" placeholder="Developer Rank" value={developerRank} onChange={e => setDeveloperRank(e.target.value)} />
-        </div>
-        <div className="form-row">
-          <label>Rank EU Developer:</label>
-          <input type="number" placeholder="Amount of games sold by Developer" value={rankEuDeveloper} onChange={e => setRankEuDeveloper(e.target.value)} />
+          <label>Amount of games sold by Developer:</label>
+          <input type="number" placeholder="Amount of games sold by Developer" value={rankOtherDeveloper} onChange={e => setRankOtherDeveloper(e.target.value)} />
         </div>
         <div className="form-row">
           <label>Steam ID:</label>
@@ -226,7 +237,7 @@ const handleSubmit = (e) => {
       {predictionResult && (
         <div className="results">
           <h3>Prediction Results:</h3>
-          <p>Predicted EU Sales: {predictionResult.predicted_eu_sales}</p>
+          <p>Predicted Other Sales: {predictionResult.predicted_other_sales}</p>
           <p>Calculated Price: {predictionResult.calculated_price}</p>
         </div>
       )}
