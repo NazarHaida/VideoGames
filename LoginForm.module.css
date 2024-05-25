@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: darkgray;
+}
+
+.top-panel {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  display: flex;
+  justify-content: space-around; /* Adjust based on your layout */
+  margin-bottom: 20px;
+}
+
+.top-panel a, .register-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  max-width: 360px;
+}
+
+/*.form {*/
+/*  width: 90%;*/
+/*  max-width: 400px;*/
+/*  padding: 20px;*/
+/*  background: #f9f9f9;*/
+/*  border-radius: 10px;*/
+/*  box-shadow: 0 4px 8px rgba(0,0,0,0.2);*/
+/*}*/
+.form-row input[type="text"],
+.form-row input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+/*.form-row {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+
+
+
+
+.apply-button {
+  padding: 10px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}

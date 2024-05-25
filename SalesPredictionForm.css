@@ -1,0 +1,339 @@
+/*!*body{*!*/
+
+/*!*    background: darkgray;*!*/
+/*!*}*!*/
+
+/*!*.login {*!*/
+/*!*  background: linear-gradient(*!*/
+/*!*    180.02deg,*!*/
+/*!*    rgba(165, 155, 65, 1) 0%,*!*/
+/*!*    rgba(75, 22, 173, 1) 100%*!*/
+/*!*  );*!*/
+/*!*  height: 812px;*!*/
+/*!*  position: relative;*!*/
+/*!*  overflow: hidden;*!*/
+/*!*}}*!*/
+/*/*/
+/*!*}*!*/
+/*.top-banner-variant-5 {*/
+
+/*  border-radius: 0px 0px 16px 16px;*/
+/*  padding: 16px 0px 16px 0px;*/
+/*  !*display: flex;*!*/
+/*  flex-direction: column;*/
+/*  gap: 24px;*/
+/*  align-items: center;*/
+/*  justify-content: flex-start;*/
+/*  !*width: 356px;*!*/
+/*  !*height: 69px;*!*/
+/*  !*position: absolute;*!*/
+/*  left: 8px;*/
+/*  top: 31px;*/
+/*  overflow: hidden;*/
+/*}*/
+/*.line {*/
+
+/*}*/
+/*.group-7581 {*/
+
+/*}*/
+/*.rectangle-535 {*/
+/*    background: #f6d970;*/
+/*}*/
+/*.big-title {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  gap: 0px;*/
+/*  align-items: center;*/
+/*  justify-content: flex-start;*/
+/*  flex-shrink: 0;*/
+/*  position: relative;*/
+/*}*/
+/*.video-games {*/
+
+/*}*/
+/*.firefly-generate-logo-with-visible-letters-nh-with-transparent-background-38584-removebg-preview-1 {*/
+/*  width: 43px;*/
+/*  height: 42px;*/
+/*  position: absolute;*/
+/*  left: 38px;*/
+/*  top: 3px;*/
+/*  object-fit: cover;*/
+/*}*/
+
+
+/*.top-panel {*/
+/*  background: linear-gradient(to right, #0072ff, #00c6ff); !* A nice blue gradient *!*/
+/*  box-shadow: 0 4px 6px rgba(0,0,0,0.2);*/
+/*  padding: 12px 24px;*/
+/*  display: flex;*/
+/*  justify-content: flex-end;*/
+/*  gap: 15px;*/
+/*  border-radius: 8px;*/
+/*}*/
+
+/*.top-panel a {*/
+/*  background-color: rgba(255, 255, 255, 0.8); /*/
+/*  color: #0072ff;*/
+/*  text-decoration: none;*/
+/*  padding: 8px 16px;*/
+/*  border-radius: 20px;*/
+/*  transition: all 0.3s ease;*/
+/*  font-weight: 500;*/
+/*}*/
+/*.form {*/
+/*  max-width: 600px;*/
+/*  margin: 20px auto;*/
+/*  padding: 20px;*/
+/*  background: #f9f9f9;*/
+/*  border-radius: 10px;*/
+/*  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /*/
+/*}*/
+
+/*.form-row {*/
+/*  margin-bottom: 20px;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.form-row input[type="text"],*/
+/*.form-row select {*/
+/*  width: 70%;*/
+/*  padding: 10px;*/
+/*  border: 1px solid #ccc;*/
+/*  border-radius: 20px;*/
+/*  transition: border-color 0.3s;*/
+/*}*/
+
+/*.form-row input[type="text"]:focus,*/
+/*.form-row select:focus {*/
+/*  outline: none;*/
+/*  border-color: #007bff;*/
+/*}*/
+
+/*.form-row .apply-button {*/
+/*  width: 20%;*/
+/*  margin-left: 10px;*/
+/*  padding: 10px 0;*/
+/*  background-color: #007bff; /*/
+/*  color: #ffffff;*/
+/*  border: none;*/
+/*  border-radius: 20px;*/
+/*  cursor: pointer;*/
+/*  transition: background-color 0.3s;*/
+/*}*/
+
+/*.form-row .apply-button:hover {*/
+/*  background-color: #0056b3;*/
+/*}*/
+
+/*.footer {*/
+/*  text-align: center;*/
+/*  padding-top: 20px; /*/
+/*}*/
+/*.form-row input[type="text"],*/
+/*.form-row select {*/
+/*  flex: 1;*/
+/*  padding: 12px 15px;*/
+/*  border: 2px solid #ccc; /*/
+/*  border-radius: 5px;*/
+/*  margin-right: 10px;*/
+/*  font-size: 16px;*/
+/*}*/
+
+/*.form-row .apply-button {*/
+/*  padding: 12px 15px;*/
+/*  font-size: 16px;*/
+/*  border-radius: 5px;*/
+/*  white-space: nowrap;*/
+/*}*/
+
+
+/*.form-row {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.top-panel a:hover {*/
+/*  background-color: #ffffff;*/
+/*  color: #0056b3;*/
+/*  box-shadow: 0 2px 4px rgba(0,0,0,0.15);*/
+/*}*/
+
+/*.transparent-background {*/
+/*    background: rgba(255, 255, 255, 0.1);*/
+/*    background-image: url('img/gridoffset-videogames-1-1585583517.jpg');*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-blend-mode: multiply;*/
+
+/*}*/
+
+
+/*.top-panel button {*/
+/*    padding: 10px 15px;*/
+/*    background-color: #4B16AD;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    font-size: 1em;*/
+/*}*/
+
+/*.top-panel button:hover {*/
+/*    background-color: dimgrey;*/
+/*}*/
+
+
+
+
+/*body, html {*/
+/*    text-align: center;*/
+/*    height: 100%;*/
+/*    margin: 0;*/
+/*    font-family: Arial, sans-serif;*/
+/*    !*bbody{*!*/
+
+/*  !*  background: linear-gradient(*!*/
+/*  !*  180.02deg,*!*/
+/*  !*  rgba(165, 155, 65, 1) 0%,*!*/
+/*  !*  rgba(75, 22, 173, 1) 100%*!*/
+/*  !*);*!*/
+/*!*}*!*/
+/*}*/
+
+
+
+/*.header {*/
+/*    position: relative;*/
+/*    padding: 20px 0;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.title-container {*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*}*/
+
+/*.title {*/
+
+/*    font-size: 2em;*/
+/*    color: transparent;*/
+/*    -webkit-background-clip: text;*/
+/*    !*background-clip: text;*!*/
+/*    background-image: url('img/Social_dino_with_hat.gif');*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position: center center;*/
+/*}*/
+
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+
+/*    justify-content: center;*/
+
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.form {*/
+/*    background: linear-gradient(*/
+/*    180.02deg,*/
+/*    rgba(165, 155, 65, 1) 0%,*/
+/*    rgba(75, 22, 173, 1) 100%*/
+/*  );*/
+/*    padding: 20px;*/
+/*    width: 90%;*/
+/*    max-width: 800px; /*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 8px;*/
+
+/*    display: inline-block;*/
+/*}*/
+
+
+
+/*.form-row {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*input[type="text"], select {*/
+/*    width: 70%;*/
+/*    padding: 10px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.apply-button {*/
+/*    width: 20%;*/
+/*    background-color: #39C715;*/
+/*    border: none;*/
+/*    padding: 10px;*/
+/*    color: white;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.apply-button:hover {*/
+/*    background-color: #2A9F10;*/
+/*}*/
+
+/*.footer {*/
+/*    !*background-color: #241082;*!*/
+/*    !*color: white;*!*/
+/*    !*padding: 20px;*!*/
+/*    !*width: 100%;*!*/
+/*    !*text-align: center;*!*/
+/*}*/
+
+/*.background-gif-container {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.background-gif {*/
+/*    display: none;*/
+/*}*/
+
+/*.logo {*/
+/*    width: 90%; /*/
+/*    max-width: 800px;*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    right: 20px;*/
+/*    width: 50px;*/
+/*}*/
+
+/*.form-row input[type="text"],*/
+/*.form-row input[type="password"] {*/
+/*  width: 100%;*/
+/*  padding: 12px;*/
+/*  margin-bottom: 10px;*/
+/*  border: 1px solid #ccc;*/
+/*  border-radius: 20px;*/
+/*  font-size: 16px;*/
+/*}*/
+/*.form-row {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  justify-content: space-between;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*.form-row input[type="text"], .form-row input[type="number"], .form-row select {*/
+/*  flex: 1 1 180px;*/
+/*  margin-right: 10px;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*.apply-button {*/
+/*  flex-basis: 100%;*/
+/*}*/
