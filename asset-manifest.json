@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/VideoGames/static/css/main.c05c7371.css",
-    "main.js": "/VideoGames/static/js/main.d4b921cb.js",
+    "main.js": "/VideoGames/static/js/main.ec7c3f56.js",
     "static/js/453.c7ed83c4.chunk.js": "/VideoGames/static/js/453.c7ed83c4.chunk.js",
     "static/media/gridoffset-videogames-1-1585583517.jpg": "/VideoGames/static/media/gridoffset-videogames-1-1585583517.7253ee0df0a44b80140e.jpg",
     "static/media/Social_dino_with_hat.gif": "/VideoGames/static/media/Social_dino_with_hat.6659894917c2d175ce5b.gif",
     "index.html": "/VideoGames/index.html",
     "main.c05c7371.css.map": "/VideoGames/static/css/main.c05c7371.css.map",
-    "main.d4b921cb.js.map": "/VideoGames/static/js/main.d4b921cb.js.map",
+    "main.ec7c3f56.js.map": "/VideoGames/static/js/main.ec7c3f56.js.map",
     "453.c7ed83c4.chunk.js.map": "/VideoGames/static/js/453.c7ed83c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c05c7371.css",
-    "static/js/main.d4b921cb.js"
+    "static/js/main.ec7c3f56.js"
   ]
 }
